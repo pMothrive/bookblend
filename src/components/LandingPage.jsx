@@ -1,7 +1,7 @@
 const LandingPage = () => {
     return (
     <>
-    Landing Pages
+    Landing Pages in app
     </>
     );
 };
