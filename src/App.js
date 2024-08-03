@@ -1,15 +1,21 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
 import './App.css';
-import LandingPage from "./components/LandingPage";
+import NavBar from './components/NavBar/NavBar';
+import Home from './components/Home/Home';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-    <Routes>
-            <Route exact path="/" element={<LandingPage />} />
-    </Routes>
-    </BrowserRouter>
-  );
+           <>
+               <NavBar/>
+               <Home/>     
+               <Main/>
+               <Footer/> 
+           </>
+
+  )
 }
 
-export default App;
+export default App
+

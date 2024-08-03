@@ -1,0 +1,58 @@
+/* NavBar.css */
+
+.navBarSection {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; /* Stack logo and nav items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgba(59, 146, 152, 0.726);
+}
+
+.logoDiv {
+  cursor: pointer;
+  margin-bottom: 10px; /* Add some space between logo and nav items */
+}
+
+.navbar-logo {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.navLists {
+  list-style: none;
+  display: none; /* Hide by default */
+  flex-direction: column; /* Stack nav items vertically */
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLists.visible {
+  display: flex; /* Show when visible class is added */
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navItem:hover {
+  color: #ddd;
+}
+
+.navLink {
+  color:  rgba(59, 146, 152, 0.726);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ddd;
+}
