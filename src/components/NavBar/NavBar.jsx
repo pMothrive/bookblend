@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './NavBar.css';
-import logo from '../Asset/Image/logo 2.png';
+import logo from '../Asset/Image/logo_2-removebg-preview.png';
 
 const NavBar = () => {
   const [navVisible, setNavVisible] = useState(false);
-
   const handleLogoClick = () => {
     setNavVisible(!navVisible);
   };

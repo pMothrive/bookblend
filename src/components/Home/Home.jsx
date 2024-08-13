@@ -51,6 +51,7 @@ const Home = () => {
           </div>
         ))}
       </Slider>
+      
       <main className="mainContent">
         <section className="Section">
           <h1>Welcome to Our Website</h1>

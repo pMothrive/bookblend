@@ -1,7 +1,11 @@
 /* NavBar.css */
 
 .navBarSection {
+  position: absolute; /* Position absolutely relative to the Home container */
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 10; /* Ensure it appears on top of the slider */
 }
 
 .header {
@@ -9,7 +13,6 @@
   flex-direction: column; /* Stack logo and nav items vertically */
   align-items: flex-start; /* Align items to the left */
   padding: 10px;
-  background-color: #ffffff;
   color: rgba(59, 146, 152, 0.726);
 }
 
@@ -19,7 +22,7 @@
 }
 
 .navbar-logo {
-  width: 100px; /* Adjust the size as needed */
+  width: 180px; /* Adjust the size as needed */
   height: auto;
 }
 
@@ -27,7 +30,7 @@
   list-style: none;
   display: none; /* Hide by default */
   flex-direction: column; /* Stack nav items vertically */
-  gap: 10px;
+  gap: 20px;
   margin: 0;
   padding: 0;
 }
@@ -48,11 +51,11 @@
 }
 
 .navLink {
-  color:  rgba(59, 146, 152, 0.726);
+  color:   #cbcbcb;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .navLink:hover {
-  color: #ddd;
+  color: rgba(59, 146, 152, 0.726);
 }
